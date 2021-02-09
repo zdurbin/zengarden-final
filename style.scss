@@ -37,6 +37,20 @@ header{
     grid-column: 2/5;
 }
 
+#zen-supporting:before{
+    background: url(/assets/Dragon.svg) center no-repeat;
+    content: '';
+    display: block;
+    float: left;
+    height: 1000px;
+    left: 55%;
+    margin: -350px 0 0 -1050px;
+    max-width: 495px;
+    min-width: 312px;
+    position: relative;
+    width: 100%;
+}
+
 #zen-supporting{
     grid-column: 2/5;
 }
