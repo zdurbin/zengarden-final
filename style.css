@@ -141,91 +141,6 @@ nav[role=navigation] li {
   padding: 1% 0;
 }
 
-@media only screen and (min-width: 1024px) {
-  nav[role=navigation] ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-  }
-}
-
-header {
-  background-color: #730020;
-}
-
-.cd-logo {
-  /* logo box style */
-  background-color: #1e130d;
-  width: 120px;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-logo {
-    width: 180px;
-  }
-}
-
-.cd-main-nav {
-  /* main navigation background color - full screen on small devices */
-  background: #730020;
-}
-.cd-main-nav li a {
-  color: #e7d9c7;
-  border-color: #8d0027;
-  font-family: "MedievalSharp", cursive;
-}
-@media only screen and (min-width: 1024px) {
-  .cd-main-nav li a {
-    color: #ff4075;
-  }
-  .cd-main-nav li a.selected {
-    color: #e7d9c7;
-    box-shadow: 0 2px 0 #1e130d;
-  }
-  .cd-main-nav li a:hover {
-    color: #e7d9c7;
-  }
-}
-
-.cd-nav-trigger span {
-  /* hamburger menu */
-  background-color: #e7d9c7;
-}
-.cd-nav-trigger span::before, .cd-nav-trigger span::after {
-  /* upper and lower lines */
-  background-color: #e7d9c7;
-}
-
-.nav-is-visible .cd-nav-trigger span {
-  /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(231, 217, 199, 0);
-}
-.nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
-  /* preserve visibility of upper and lower lines - close icon */
-  background-color: #e7d9c7;
-}
-
-.cd-download {
-  /* download button top-right visible on big devices */
-  background-color: #a6002e;
-}
-.no-touch .cd-download:hover {
-  background-color: #c00035;
-}
-.cd-download span {
-  /* tooltip */
-  background: #1e130d;
-  color: #e7d9c7;
-}
-.cd-download span::before {
-  /* right arrow color */
-  border-color: #1e130d;
-}
-
 /* -------------------------------- 
 
 xTypography 
@@ -289,6 +204,55 @@ p a {
 
 nav[role=navigation] {
   font-family: "MedievalSharp", cursive;
+}
+
+/* -------------------------------- 
+
+xElements
+-------------------------------- */
+body {
+  /* this is the page background */
+  background-color: #1e130d;
+  max-width: 100vw;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#zen-intro {
+  width: 100%;
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#zen-summary {
+  height: 100px;
+}
+
+header {
+  height: 200px;
+}
+
+#zen-summary, header {
+  grid-column: 1/6;
+  position: -webkit-sticky;
+}
+
+#zen-preamble {
+  grid-column: 2/5;
+}
+
+#zen-supporting {
+  grid-column: 2/5;
+}
+
+aside {
+  grid-row: 2/5;
+  grid-column: 5/6;
+  margin-top: -350px;
 }
 
 /*# sourceMappingURL=style.css.map */
