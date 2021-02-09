@@ -139,6 +139,26 @@ nav[role=navigation] a:hover {
 
 nav[role=navigation] li {
   padding: 1% 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav[role=navigation] ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+  }
 }
 
 /* -------------------------------- 
@@ -212,8 +232,14 @@ xElements
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #1e130d;
+  background-color: #ad8a56;
   max-width: 100vw;
+}
+
+section h3, #zen-supporting h3 {
+  background-color: white;
+  font-family: "MedievalSharp", cursive;
+  padding: 1%;
 }
 
 .page-wrapper {

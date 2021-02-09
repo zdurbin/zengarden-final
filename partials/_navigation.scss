@@ -21,11 +21,12 @@ nav[role=navigation] a{
 
 nav[role=navigation] li{
   padding: 1% 0;
+  @include flex-container(column);
 }
 
-// nav[role=navigation] ul{
-//   @include MQ(M){
-//     @include flex-container(row);
-//     justify-content: space-evenly;
-//   }
-// }
+nav[role=navigation] ul{
+  @include MQ(M){
+    @include flex-container(column);
+    justify-content: space-evenly;
+  }
+}
