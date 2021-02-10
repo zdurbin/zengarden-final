@@ -54,46 +54,75 @@ header h2{
     }
 }
 
-//This is not working yet for the dragon picture --TODO
-#zen-supporting:before{
-    background: url(/assets/Dragon.svg) center no-repeat;
-    content: '';
-    // display: block;
-    // float: left;
-    // height: 900px;
-    // left: 55%;
-    // margin: -350px 0 0 -1050px;
-    // max-width: 495px;
-    // min-width: 312px;
-    // position: relative;
-    // width: 100%;
+#zen-preamble h3, #zen-supporting h3{
+    position: relative;
+    padding-left: 7%;
+}
+
+#zen-preamble h3::after, #zen-supporting h3::after{
+    content: " ";
+    display: block;
+    float: left;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 82%, 0 100%, 0 0);
+    height: 120%;
+    width: 5%;
+    background-color: $color-6;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #zen-supporting{
+    position: relative;
     grid-column: 1/6;
     @include MQ(M){
         grid-column: 2/5;
     }
 }
 
+//This is not working yet for the dragon picture --TODO
+#zen-supporting:before{
+    grid-column: 1/2;
+    background: url(/assets/Dragon.svg) center no-repeat;
+    // content: '';
+    // display: inline-block;
+    // // float: left;
+    // height: 900px;
+    // // left: 55%;
+    // // margin: -350px 0 0 -1050px;
+    // max-width: 495px;
+    // min-width: 312px;
+    // position: relative;
+    // width: 100%;
+}
+
 aside{
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 95%, 0 100%, 0 0);
-    background-color: $color-6;
+    color: $color-5;
+    height: 1250px;
+    margin-left: 5%;
     @include MQ(M){
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 95%, 0 100%, 0 0);
+        background-color: $color-6;
         grid-row: 2/5;
         grid-column: 5/6;
-        position: absolute;
-        top: 425px;
-        right: 0;
-        padding: 0 1%;
+        position: relative;
+        //Set height of top banner to fix pixels size --TODO
+        top: -15.1%;
+        right: 3%;
+        padding: 0 5%;
         padding-top: 5%;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
     }
 }
 
 #design-selection{
+    margin-bottom: 25px;
     &:nth-child(even){
         text-align: right;
+    }
+
+    & > h3{
+        margin-bottom: 25px;
     }
     @include MQ(M){
         &:nth-child(even){
@@ -101,6 +130,11 @@ aside{
         }
     }
 }
+
+#design-archives{
+    margin-bottom: 25px;
+}
+
 aside li{
     margin-bottom: 5%;
 }

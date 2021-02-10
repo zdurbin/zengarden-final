@@ -11,7 +11,8 @@ xNavigation
 
 
 nav[role=navigation] a{
-  color: $color-1;
+  text-decoration: none;
+  color: #fff;
   font-size: 1.25em;
   transition: 0.5s;
   &:hover{

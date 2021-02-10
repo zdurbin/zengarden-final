@@ -137,7 +137,8 @@ xNavigation
 
 -------------------------------- */
 nav[role=navigation] a {
-  color: #1e130d;
+  text-decoration: none;
+  color: #fff;
   font-size: 1.25em;
   transition: 0.5s;
 }
@@ -338,12 +339,26 @@ header h2 {
   }
 }
 
-#zen-supporting:before {
-  background: url(/assets/Dragon.svg) center no-repeat;
-  content: "";
+#zen-preamble h3, #zen-supporting h3 {
+  position: relative;
+  padding-left: 7%;
+}
+
+#zen-preamble h3::after, #zen-supporting h3::after {
+  content: " ";
+  display: block;
+  float: left;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 82%, 0 100%, 0 0);
+  height: 120%;
+  width: 5%;
+  background-color: #A00608;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #zen-supporting {
+  position: relative;
   grid-column: 1/6;
 }
 @media only screen and (min-width: 1024px) {
@@ -352,30 +367,48 @@ header h2 {
   }
 }
 
+#zen-supporting:before {
+  grid-column: 1/2;
+  background: url(/assets/Dragon.svg) center no-repeat;
+}
+
 aside {
-  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 95%, 0 100%, 0 0);
-  background-color: #A00608;
+  color: #e7d9c7;
+  height: 1250px;
+  margin-left: 5%;
 }
 @media only screen and (min-width: 1024px) {
   aside {
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 95%, 0 100%, 0 0);
+    background-color: #A00608;
     grid-row: 2/5;
     grid-column: 5/6;
-    position: absolute;
-    top: 425px;
-    right: 0;
-    padding: 0 1%;
+    position: relative;
+    top: -15.1%;
+    right: 3%;
+    padding: 0 5%;
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
 }
 
+#design-selection {
+  margin-bottom: 25px;
+}
 #design-selection:nth-child(even) {
   text-align: right;
+}
+#design-selection > h3 {
+  margin-bottom: 25px;
 }
 @media only screen and (min-width: 1024px) {
   #design-selection:nth-child(even) {
     text-align: left;
   }
+}
+
+#design-archives {
+  margin-bottom: 25px;
 }
 
 aside li {
