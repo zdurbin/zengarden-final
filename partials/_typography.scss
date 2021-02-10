@@ -18,7 +18,7 @@ xTypography
 h1,
 h2 {
   font-family: $secondary-font;
-  color: $color-5;
+  color: $color-4;
 }
 
 h1 {
@@ -55,10 +55,10 @@ p {
     font-family: $primary-font;
     font-size: 1.4rem;
     line-height: 1.4;
-    color: lighten($color-4, 25%);
+    color: lighten($color-1, 25%);
   
     a {
-        color: $color-5;
+        color: $color-1;
         text-decoration: underline;
     }
 

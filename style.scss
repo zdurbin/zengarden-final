@@ -22,15 +22,25 @@
 }
 
 #zen-summary{
+    margin-bottom: 25px;
     @include MQ(M) {
         height: 200px;
     }
 }
 
 header{
+    background-image: url(/assets/toppng.com-medieval-dragon-banner-285x541.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
     @include MQ(M) {
         height: 200px;
     }
+}
+
+header h2{
+    line-height: 0;
 }
 
 #zen-summary, header{
@@ -48,15 +58,15 @@ header{
 #zen-supporting:before{
     background: url(/assets/Dragon.svg) center no-repeat;
     content: '';
-    display: block;
-    float: left;
-    height: 900px;
-    left: 55%;
-    margin: -350px 0 0 -1050px;
-    max-width: 495px;
-    min-width: 312px;
-    position: relative;
-    width: 100%;
+    // display: block;
+    // float: left;
+    // height: 900px;
+    // left: 55%;
+    // margin: -350px 0 0 -1050px;
+    // max-width: 495px;
+    // min-width: 312px;
+    // position: relative;
+    // width: 100%;
 }
 
 #zen-supporting{
@@ -67,13 +77,17 @@ header{
 }
 
 aside{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 95%, 0 100%, 0 0);
+    background-color: $color-6;
     @include MQ(M){
         grid-row: 2/5;
         grid-column: 5/6;
         position: absolute;
-        top: 400px;
+        top: 425px;
         right: 0;
         padding: 0 1%;
+        padding-top: 5%;
+        padding-bottom: 10%;
     }
 }
 
