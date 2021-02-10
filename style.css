@@ -270,6 +270,18 @@ section h3, #zen-supporting h3 {
   padding: 1%;
 }
 
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -341,16 +353,17 @@ section h3, #zen-supporting h3 {
   }
 }
 
-aside li {
-  margin-bottom: 5%;
-}
-aside li:nth-child(even) {
+#design-selection:nth-child(even) {
   text-align: right;
 }
 @media only screen and (min-width: 1024px) {
-  aside li:nth-child(even) {
+  #design-selection:nth-child(even) {
     text-align: left;
   }
+}
+
+aside li {
+  margin-bottom: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

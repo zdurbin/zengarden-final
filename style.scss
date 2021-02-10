@@ -44,7 +44,7 @@ header{
     }
 }
 
-//This is not working yet for the dragon picture TODO
+//This is not working yet for the dragon picture --TODO
 #zen-supporting:before{
     background: url(/assets/Dragon.svg) center no-repeat;
     content: '';
@@ -77,8 +77,7 @@ aside{
     }
 }
 
-aside li{
-    margin-bottom: 5%;
+#design-selection{
     &:nth-child(even){
         text-align: right;
     }
@@ -87,4 +86,7 @@ aside li{
             text-align: left;
         }
     }
+}
+aside li{
+    margin-bottom: 5%;
 }
