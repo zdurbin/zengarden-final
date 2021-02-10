@@ -127,6 +127,10 @@ header {
   font-size: 2em;
 }
 
+aside {
+  font-family: "MedievalSharp", cursive;
+}
+
 /* -------------------------------- 
 
 xNavigation 
@@ -246,6 +250,10 @@ header {
   font-size: 2em;
 }
 
+aside {
+  font-family: "MedievalSharp", cursive;
+}
+
 /* -------------------------------- 
 
 xElements
@@ -322,9 +330,6 @@ section h3, #zen-supporting h3 {
   }
 }
 
-aside {
-  font-family: "MedievalSharp", cursive;
-}
 @media only screen and (min-width: 1024px) {
   aside {
     grid-row: 2/5;
@@ -338,6 +343,14 @@ aside {
 
 aside li {
   margin-bottom: 5%;
+}
+aside li:nth-child(even) {
+  text-align: right;
+}
+@media only screen and (min-width: 1024px) {
+  aside li:nth-child(even) {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
