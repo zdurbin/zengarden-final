@@ -25,8 +25,12 @@ nav[role=navigation] li{
 }
 
 nav[role=navigation] ul{
-  @include MQ(M){
+  width: 80vw;
+  @include flex-container(row);
+  flex-wrap: wrap;
+  justify-content: space-between;
+    @include MQ(M){
     @include flex-container(column);
-    justify-content: space-evenly;
+    width: 100%;
   }
 }

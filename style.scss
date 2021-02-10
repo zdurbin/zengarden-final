@@ -22,11 +22,15 @@
 }
 
 #zen-summary{
-    height: 100px;
+    @include MQ(M) {
+        height: 200px;
+    }
 }
 
 header{
-    height: 200px;
+    @include MQ(M) {
+        height: 200px;
+    }
 }
 
 #zen-summary, header{
@@ -34,15 +38,19 @@ header{
 }
 
 #zen-preamble{
-    grid-column: 2/5;
+    grid-column: 1/6;
+    @include MQ(M){
+        grid-column: 2/5;
+    }
 }
 
+//This is not working yet for the dragon picture TODO
 #zen-supporting:before{
     background: url(/assets/Dragon.svg) center no-repeat;
     content: '';
     display: block;
     float: left;
-    height: 1000px;
+    height: 900px;
     left: 55%;
     margin: -350px 0 0 -1050px;
     max-width: 495px;
@@ -52,15 +60,22 @@ header{
 }
 
 #zen-supporting{
-    grid-column: 2/5;
+    grid-column: 1/6;
+    @include MQ(M){
+        grid-column: 2/5;
+    }
 }
 
 aside{
-    grid-row: 2/5;
-    grid-column: 5/6;
-    margin-top: -350px;
-    padding-left: 12%;
     font-family: $alternative-font;
+    @include MQ(M){
+        grid-row: 2/5;
+        grid-column: 5/6;
+        position: absolute;
+        top: 400px;
+        right: 0;
+        padding: 0 1%;
+    }
 }
 
 aside li{

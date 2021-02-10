@@ -123,6 +123,10 @@ nav[role=navigation] {
   font-family: "MedievalSharp", cursive;
 }
 
+header {
+  font-size: 2em;
+}
+
 /* -------------------------------- 
 
 xNavigation 
@@ -148,6 +152,18 @@ nav[role=navigation] li {
   flex-flow: column nowrap;
 }
 
+nav[role=navigation] ul {
+  width: 80vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 @media only screen and (min-width: 1024px) {
   nav[role=navigation] ul {
     display: -webkit-box;
@@ -157,7 +173,7 @@ nav[role=navigation] li {
     -webkit-flex-flow: column nowrap;
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    width: 100%;
   }
 }
 
@@ -226,6 +242,10 @@ nav[role=navigation] {
   font-family: "MedievalSharp", cursive;
 }
 
+header {
+  font-size: 2em;
+}
+
 /* -------------------------------- 
 
 xElements
@@ -254,12 +274,16 @@ section h3, #zen-supporting h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#zen-summary {
-  height: 100px;
+@media only screen and (min-width: 1024px) {
+  #zen-summary {
+    height: 200px;
+  }
 }
 
-header {
-  height: 200px;
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 200px;
+  }
 }
 
 #zen-summary, header {
@@ -267,7 +291,12 @@ header {
 }
 
 #zen-preamble {
-  grid-column: 2/5;
+  grid-column: 1/6;
+}
+@media only screen and (min-width: 1024px) {
+  #zen-preamble {
+    grid-column: 2/5;
+  }
 }
 
 #zen-supporting:before {
@@ -275,7 +304,7 @@ header {
   content: "";
   display: block;
   float: left;
-  height: 1000px;
+  height: 900px;
   left: 55%;
   margin: -350px 0 0 -1050px;
   max-width: 495px;
@@ -285,15 +314,26 @@ header {
 }
 
 #zen-supporting {
-  grid-column: 2/5;
+  grid-column: 1/6;
+}
+@media only screen and (min-width: 1024px) {
+  #zen-supporting {
+    grid-column: 2/5;
+  }
 }
 
 aside {
-  grid-row: 2/5;
-  grid-column: 5/6;
-  margin-top: -350px;
-  padding-left: 12%;
   font-family: "MedievalSharp", cursive;
+}
+@media only screen and (min-width: 1024px) {
+  aside {
+    grid-row: 2/5;
+    grid-column: 5/6;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    padding: 0 1%;
+  }
 }
 
 aside li {
