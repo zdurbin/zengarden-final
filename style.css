@@ -400,6 +400,7 @@ aside {
     padding-top: 5%;
     padding-bottom: 5%;
     max-width: 200px;
+    background-image: linear-gradient(to right, #530b0e 0%, #8f1719 51%, #530b0e 100%);
   }
 }
 
