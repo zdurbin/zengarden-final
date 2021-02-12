@@ -24,7 +24,7 @@
 #zen-summary{
     margin-bottom: 25px;
     @include MQ(M) {
-        height: 200px;
+        height: 150px;
     }
 }
 
@@ -117,7 +117,7 @@ aside{
         grid-column: 5/6;
         position: absolute;
         //Set height of top banner to fix pixels size --TODO
-        top: 425px;
+        top: 375px;
         right: 2%;
         padding: 0 5%;
         padding-top: 5%;
