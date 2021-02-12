@@ -350,7 +350,7 @@ header h2 {
 
 #zen-preamble h3, #zen-supporting h3 {
   position: relative;
-  padding-left: 7%;
+  padding-left: 35px;
   font-size: 1.75em;
 }
 
@@ -415,6 +415,7 @@ aside > .wrapper {
 }
 #design-selection > h3 {
   margin-bottom: 25px;
+  font-size: 1.5em;
 }
 @media only screen and (min-width: 1024px) {
   #design-selection:nth-child(even) {
@@ -430,9 +431,26 @@ aside li {
   margin-bottom: 5%;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+}
+
 footer a {
-  width: 150px;
-  height: 150px;
+  padding: 1% 5%;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  font-family: "MedievalSharp", cursive;
+  font-weight: bold;
+  color: #c9bdbd;
+  border: 3px solid black;
+  background: #530b0e;
+  box-shadow: 0 0 0 3px #c9bdbd;
+  border-radius: 5px;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #530b0e 0%, #8f1719 51%, #530b0e 100%);
 }
 
 #zen-requirements {
