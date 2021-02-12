@@ -326,6 +326,15 @@ header h2 {
   line-height: 0;
 }
 
+#zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements {
+  margin-bottom: 50px;
+  width: 90%;
+}
+
+#zen-preamble > h3, #zen-explanation > h3, #zen-participation > h3, #zen-benefits > h3, #zen-requirements > h3 {
+  margin-bottom: 15px;
+}
+
 #zen-summary, header {
   grid-column: 1/6;
 }
@@ -335,13 +344,14 @@ header h2 {
 }
 @media only screen and (min-width: 1024px) {
   #zen-preamble {
-    grid-column: 2/5;
+    grid-column: 1/5;
   }
 }
 
 #zen-preamble h3, #zen-supporting h3 {
   position: relative;
   padding-left: 7%;
+  font-size: 1.75em;
 }
 
 #zen-preamble h3::after, #zen-supporting h3::after {
@@ -350,7 +360,7 @@ header h2 {
   float: left;
   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 49% 82%, 0 100%, 0 0);
   height: 120%;
-  width: 5%;
+  width: 30px;
   background-color: #A00608;
   position: absolute;
   top: 0;
@@ -363,7 +373,7 @@ header h2 {
 }
 @media only screen and (min-width: 1024px) {
   #zen-supporting {
-    grid-column: 2/5;
+    grid-column: 1/5;
   }
 }
 
@@ -383,13 +393,18 @@ aside {
     background-color: #A00608;
     grid-row: 2/5;
     grid-column: 5/6;
-    position: relative;
-    top: -15.1%;
-    right: 3%;
+    position: absolute;
+    top: 425px;
+    right: 2%;
     padding: 0 5%;
     padding-top: 5%;
     padding-bottom: 5%;
+    max-width: 200px;
   }
+}
+
+aside > .wrapper {
+  text-align: right;
 }
 
 #design-selection {
