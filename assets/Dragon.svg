@@ -1,1 +1,91 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 705.29 2169.44"><path d="M632,342.51C548.73,191.65,503.7,130.13,325.7,72.67c162.56,68.85,198.14,124.49,264.91,257.51Z" transform="translate(-190.49 -72.67)"/><path d="M578.72,461.3l-14.21,34.27c-68.7-54.8-131.89-56.71-230-13.71C418.77,416.88,482.18,403.3,578.72,461.3Z" transform="translate(-190.49 -72.67)"/><path d="M559.18,516.13l-24.87,32c-10.56-35.53-103-19.68-201.6,0C416.27,508.06,496.45,480.31,559.18,516.13Z" transform="translate(-190.49 -72.67)"/><path d="M409.09,1322.58c-104-170.87-167.47-348-186.51-527.73C196.83,669.2,243.22,516,338.93,446.45c92.56-72.32,180.32-66.89,258.44,12.57-3.3,62.62-35.74,109.75-80.82,146.21,7,92.5,76.16,196.46,143,289-36-77-65.82-151.35-71.94-215.89,1.22-100.93,42.55-109.47,95.92-75.39l33.74,53.69,51.51,16,56,118.8,71,5.71-89.7-177-2.66-86.81c-26.61-29.35-45.58-58.41-69.27-84.53,1.53-54.51-9.85-109.39-28.42-164.49-1.22,43.13-1.39,86.44-24,130.22-71.1-40.13-141.4-58.41-214-58.26-48.3,7.33-93.2,23.21-133.21,51.41-56.73,49.64-107.33,104-126.12,175.91-14,35.46-16.05,76.2-17.76,127.93-1.41,63.9,8.53,174.84,62.17,334.69C283.28,1156.86,341.84,1253.34,409.09,1322.58ZM685.29,520.7c-6.47-20-12.72-34.88-5.33-44.55,0,0,14.21,1.14,15.1-9.14s42.29,69.35,52.4,108.52C714.6,558.4,701.28,550.4,685.29,520.7ZM664,833.68c5.63,20.4,6.72,38.07-8.88,45.7l-14.21-28.56C654.42,854.7,661,847.07,664,833.68Zm-63.06-97.09c15.92,11.28,17.67-12.47,17.76-28.56,6.92,21.2,7.09,51.16-8.88,65.11Zm116.34-80c-5.84,18.8-19.86,19.44-40.85,4.57,19.42,0,29.3-7.93,26.64-26.27Zm65.72,56c-4.48,16.26-16.76,11.92-29.3,6.86,15.8-3.71,19.55-18.56,18.65-37.7Zm35.53,77.68c-7.68,16.09-27.61,2.49-48.85-9.14,27.43.75,44.29-.35,32-36.55Z" transform="translate(-190.49 -72.67)"/><path d="M646.21,652.06c2.23,44.14,13,75.49,32,99.38,46,31.95,85.21,84.62,123.44,141.64,32.8,74.82,17.74,144.34-9.77,212.47,15.24-87.95,19.7-160.17-5.32-194.19-25.76-56-36.42-69.68-123.45-148.5C645.33,750.3,636.46,688.08,646.21,652.06Z" transform="translate(-190.49 -72.67)"/><path d="M454.38,1401.4C524.8,1547.73,569.51,1695.85,555.63,1848c-2.65,234.08-93.29,320.59-178.51,394.08C469,2106.88,532,1964.41,521.88,1844.6,539.39,1702,506.78,1553,454.38,1401.4Z" transform="translate(-190.49 -72.67)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 705.3 2169.4" style="enable-background:new 0 0 705.3 2169.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#8F1600;}
+	.st1{fill:#9C0000;}
+	.st2{filter:url(#AI_Woodgrain);}
+	.st3{fill:#89272D;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="150%" id="AI_Woodgrain" width="150%" x="-10%" y="-10%">
+	<feGaussianBlur  id="blur" in="SourceGraphic" result="blur" stdDeviation="4"></feGaussianBlur>
+	<feOffset  dx="4" dy="4" id="offset" in="blur" result="offsetBlurredAlpha"></feOffset>
+	<feFlood  id="color" result="color" style="flood-color:black; flood-opacity:0.4"></feFlood>
+	<feComposite  id="shadowColor" in="color" in2="offsetBlurredAlpha" operator="in" result="offsetBlurredAlpha"></feComposite>
+	
+		<feDiffuseLighting  diffuseConstant="1" id="diffuse" in="blur" lighting-color="white" result="diffuse" resultScale="1" surfaceScale="5">
+		<feDistantLight  azimuth="135" elevation="60" id="light2"></feDistantLight>
+	</feDiffuseLighting>
+	
+		<feSpecularLighting  in="blur" lighting-color="white" result="specularOut" specularConstant="1" specularExponent="10" surfaceScale="5">
+		<feDistantLight  azimuth="135" elevation="60" id="light"></feDistantLight>
+	</feSpecularLighting>
+	<feComposite  in="specularOut" in2="SourceAlpha" operator="in" result="specularOut"></feComposite>
+	<feComposite  in="SourceGraphic" in2="diffuse" k1="1" k2="0" k3="0" k4="0" operator="arithmetic" result="litPaint">
+		</feComposite>
+	<feComposite  in="litPaint" in2="specularOut" k1="0" k2="1" k3="1" k4="0" operator="arithmetic" result="litPaint">
+		</feComposite>
+	<feMerge>
+		<feMergeNode  in="offsetBlurredAlpha"></feMergeNode>
+		<feMergeNode  in="litPaint"></feMergeNode>
+	</feMerge>
+	
+		<feTurbulence  baseFrequency=".05" in="SourceAlpha" numOctaves="10" result="Turbulence" stitchTiles="noStitch" type="fractalNoise">
+		</feTurbulence>
+	<feColorMatrix  in="Turbulence" result="Grayscale" type="matrix" values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1">
+		</feColorMatrix>
+	<feGaussianBlur  in="SourceAlpha" result="BlurredAlpha" stdDeviation="4"></feGaussianBlur>
+	<feOffset  dx="-4" dy="-5" in="BlurredAlpha" result="OffsetBlurredAlpha"></feOffset>
+	<feComposite  in="Grayscale" in2="OffsetBlurredAlpha" operator="in" result="CompBlurTurb"></feComposite>
+	<feGaussianBlur  in="CompBlurTurb" result="CompBlurTurb2" stdDeviation="1.5"></feGaussianBlur>
+	<feComponentTransfer  in="Grayscale" result="CompXferFire">
+		<feFuncR  tableValues="2 0" type="table"></feFuncR>
+		<feFuncG  tableValues=".7 0 " type="table"></feFuncG>
+		<feFuncB  tableValues=".1 0" type="table"></feFuncB>
+	</feComponentTransfer>
+	<feComposite  in="CompXferFire" in2="SourceGraphic" operator="in" result="CompSourceFire"></feComposite>
+	<feMerge  result="MergeAll">
+		<feMergeNode  in="CompSourceFire"></feMergeNode>
+	</feMerge>
+</filter>
+<g>
+	
+		<image style="overflow:visible;opacity:0.75;" width="286" height="256" xlink:href="EFBEE3E2.png"  transform="matrix(1 0 0 1 170 73.4399)">
+	</image>
+	<g>
+		<path class="st0" d="M433.5,306.6C364.2,181,326.7,129.8,178.6,82c135.3,57.3,164.9,103.6,220.5,214.4L433.5,306.6z"/>
+	</g>
+</g>
+<g>
+	
+		<image style="overflow:visible;opacity:0.75;" width="618" height="1661" xlink:href="EFBEE3E6.png"  transform="matrix(1 0 0 1 58 249.4399)">
+	</image>
+	<g>
+		<g>
+			<path class="st0" d="M389.2,405.5L377.4,434c-57.2-45.6-109.8-47.2-191.5-11.4C256,368.5,308.8,357.2,389.2,405.5z"/>
+			<path class="st0" d="M372.9,451.1l-20.7,26.6c-8.8-29.6-85.7-16.4-167.8,0C254,444.4,320.7,421.3,372.9,451.1z"/>
+			<path class="st1" d="M429.6,492.1c-9.3,35.6-8.6,63.2,0.6,86.9c28.5,36.9,46.5,88.5,62.6,143.3c7.3,67.6-22,119-60.9,166.3
+				c34.1-66,55.7-122.2,44.3-155.5c-6.4-50.9-11.5-64.4-60.9-148.8C404.3,569.8,412.9,518.2,429.6,492.1z"/>
+			<path class="st0" d="M248,1122.4C161.4,980.2,108.6,832.8,92.7,683.2c-21.4-104.6,17.2-232.1,96.9-290
+				c77-60.2,150.1-55.7,215.1,10.5C402,455.7,375,495,337.4,525.3c5.8,77,63.4,163.5,119,240.6c-30-64.1-54.8-126-59.9-179.7
+				c1-84,35.4-91.1,79.8-62.8l28.1,44.7l42.9,13.3l46.6,98.9l59.1,4.8l-74.7-147.3l-2.2-72.3c-22.2-24.4-37.9-48.6-57.7-70.4
+				c1.3-45.4-8.2-91.1-23.7-136.9c-1,35.9-1.2,72-20,108.4c-59.2-33.4-117.7-48.6-178.1-48.5c-40.2,6.1-77.6,19.3-110.9,42.8
+				c-47.2,41.3-89.3,86.6-105,146.4c-11.7,29.5-13.4,63.4-14.8,106.5C65,667,73.2,759.3,117.9,892.4
+				C143.3,984.5,192,1064.8,248,1122.4z M477.9,454.9c-5.4-16.6-10.6-29-4.4-37.1c0,0,11.8,0.9,12.6-7.6
+				c0.7-8.6,35.2,57.7,43.6,90.3C502.3,486.3,491.2,479.7,477.9,454.9z M460.2,715.5c4.7,17,5.6,31.7-7.4,38L441,729.7
+				C452.2,733,457.7,726.6,460.2,715.5z M407.7,634.7c13.3,9.4,14.7-10.4,14.8-23.8c5.8,17.6,5.9,42.6-7.4,54.2L407.7,634.7z
+				 M504.5,568.1c-4.9,15.6-16.5,16.2-34,3.8c16.2,0,24.4-6.6,22.2-21.9L504.5,568.1z M559.2,614.7c-3.7,13.5-14,9.9-24.4,5.7
+				c13.2-3.1,16.3-15.4,15.5-31.4L559.2,614.7z M588.8,679.3c-6.4,13.4-23,2.1-40.7-7.6c22.8,0.6,36.9-0.3,26.6-30.4L588.8,679.3z"
+				/>
+			<path class="st0" d="M285.7,1188.1c58.6,121.8,95.8,245.1,84.3,371.8c-2.2,194.9-77.7,266.9-148.6,328
+				c76.5-112.5,128.9-231.1,120.5-330.9C356.4,1438.3,329.3,1314.3,285.7,1188.1z"/>
+		</g>
+	</g>
+</g>
+<g class="st2">
+	<path class="st3" d="M464.2,606.6c152.8,96.7,33.6,167.2,104.5,313.8l0.5,0.3c-124.1-89.1,14-228.6-104.3-313.4"/>
+	<path class="st3" d="M625.5,879.1c31.4-86.3-48.4-99-68.6-175.7c-11.4,102,70.4,99.9,68.2,175.8"/>
+	<path class="st3" d="M555.5,815.9c110.3,78.1,5.3,104.3,98.2,256.8l0.6,0.5c-119.5-71.2-27.9-166.9-97.8-255.6"/>
+</g>
+</svg>
